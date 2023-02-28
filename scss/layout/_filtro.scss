@@ -1,0 +1,10 @@
+.filtro {
+  @apply grid grid-cols-2 gap-10 justify-center md:flex flex-wrap;
+
+  &__btn {
+    @apply bg-primary-400 rounded-lg py-10 px-12 font-bold text-primary-300 flex flex-col items-center gap-5 hover:text-primary-100 transition duration-300;
+    &.active {
+      @apply text-primary-100;
+    }
+  }
+}

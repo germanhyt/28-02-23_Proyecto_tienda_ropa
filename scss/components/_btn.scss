@@ -1,0 +1,49 @@
+.btn {
+  @apply py-2 px-7 rounded-[7px] font-semibold border-[2px] border-transparent transition duration-300;
+
+  &--primary {
+    @apply bg-primary-100 text-white;
+  }
+
+  &--whatsapp {
+    @apply fixed bottom-4 right-4 bg-green-400 hover:bg-green-600 transition-colors duration-300 rounded-full p-2 text-white text-3xl;
+  }
+
+  &--primary-outline {
+    @apply text-primary-100 border-primary-100 hover:bg-primary-100 hover:text-white;
+  }
+
+  &--p-to-ghost {
+    @apply bg-primary-100  block text-white;
+    @apply hover:bg-[#c2016c] hover:border-[#c2016c] hover:text-white;
+    @apply lg:bg-transparent lg:text-primary-100 border-primary-100;
+  }
+
+  &--open-category {
+    @apply flex gap-2 font-bold items-center transition-colors hover:text-primary-100 duration-200;
+  }
+
+  &__icon {
+    &--open-category {
+      @apply text-3xl text-primary-100;
+    }
+
+    &--whatsapp {
+      @apply flex;
+    }
+  }
+
+  &__span {
+    &--open-category {
+      @apply hidden sm:block;
+    }
+
+    &--catalogo-desktop {
+      @apply hidden lg:block;
+    }
+
+    &--catalogo-mobile {
+      @apply lg:hidden;
+    }
+  }
+}

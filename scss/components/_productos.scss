@@ -1,0 +1,21 @@
+.productos {
+  @apply grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-20;
+  @apply justify-center;
+  &__card {
+    // @apply border-[1px] border-primary-100 rounded-2xl;
+    figure {
+      @apply h-[280px];
+      img {
+        @apply object-cover w-full h-[inherit];
+      }
+    }
+  }
+
+  &__body {
+    @apply text-primary-300 text-center flex flex-col gap-3 py-4;
+    @apply pb-0;
+  }
+  &__price {
+    @apply font-semibold text-[1.2rem];
+  }
+}

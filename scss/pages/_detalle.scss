@@ -1,0 +1,125 @@
+.section-detalle {
+  @apply flex flex-col gap-8 mb-16;
+
+  &__flex-group {
+    @apply flex flex-col-reverse sm:flex-row-reverse lg:flex-row;
+  }
+
+  &__containt-img {
+    // @apply container my-8 min-w-[100px] h-fit max-w-[778px] max-h-[800px];
+    @apply container min-w-[100px] h-fit max-w-[778px];
+  }
+
+  &__containt-card {
+    @apply bg-primary-100  rounded-r-3xl lg:rounded-none lg:rounded-l-3xl w-full min-h-[191px] max-w-[940px] max-h-[980px] flex justify-center items-center;
+  }
+
+  &__card {
+    @apply flex flex-col justify-start ml-5  md:ml-28 md:mr-14 lg:mr-32 lg:ml-20 mr-5 mt-2 font-sans md:justify-center;
+  }
+
+  &__tittle {
+    @apply font-bold text-[#FFFBF4] pb-2;
+    font-size: clamp(1.5rem, 1vw + 1.3rem, 2.5rem);
+    // font-size: clamp(0.625rem, 2.3vw + 0.2rem, 3rem);
+  }
+
+  &__p {
+    @apply font-normal text-white;
+    // font-size: clamp(0.875rem, 0.3vw + 0.8rem, 1.2rem);
+  }
+
+  &__des {
+    @apply flex gap-3 py-1;
+    // font-size: clamp(0.875rem, 0.3vw + 0.8rem, 1.2rem);
+  }
+
+  &__containt-button {
+    @apply ml-1 flex items-center gap-3 md:gap-5 lg:gap-8 md:justify-start pt-2 text-center lg:pt-0;
+    @apply lg:justify-between;
+  }
+
+  &__mas-menos {
+    @apply w-8 h-[14px] bg-white rounded-lg lg:rounded-md lg:h-[40px] lg:w-[40px] flex justify-center items-center text-primary-100 lg:text-3xl md:my-5 lg:my-1;
+    // @apply lg:w-5 lg:h-5;
+  }
+  &__number {
+    @apply text-white;
+    font-size: clamp(0.875rem, 0.6vw + 0.8rem, 1.5rem);
+  }
+
+  &__agregar {
+    @apply mb-2 mt-2 flex justify-center items-center bg-white text-primary-100 w-full  h-fit text-center font-semibold rounded-lg md:w-[160px] py-1 lg:rounded-md md:py-2 lg:w-[256px] text-[9px] lg:h-[56px] lg:text-[16px];
+  }
+
+  &__submit {
+    @apply px-8 bg-white text-primary-100 py-1 font-semibold rounded-lg lg:rounded-md md:py-2 hover:bg-slate-200 transition-colors duration-300 #{!important};
+  }
+
+  &__form {
+    label {
+      @apply text-white font-semibold;
+    }
+    input,
+    select {
+      @apply block;
+      @apply px-4 py-2 rounded-md;
+    }
+    input {
+      &::placeholder {
+        @apply text-sm lg:text-base;
+      }
+    }
+  }
+
+  &__cont-specif {
+    @apply flex flex-col gap-3 lg:gap-7;
+  }
+
+  &__specif-title {
+    @apply text-3xl font-bold text-center lg:text-4xl  md:text-start;
+  }
+
+  &__title-table {
+    @apply flex flex-col lg:flex-row gap-12 lg:gap-32 items-start;
+  }
+
+  &__cont-text {
+    @apply lg:w-1/2;
+  }
+
+  &__cont-list {
+    @apply list-disc pl-5 lg:pl-6;
+  }
+
+  &__cont-table {
+    @apply shadow-lg lg:w-1/2 w-full;
+  }
+
+  &__rowtable {
+    @apply flex flex-col sm:flex-row justify-between px-8 py-8 sm:px-12 gap-4   items-center sm:py-8;
+
+    &:nth-child(odd) {
+      @apply text-white bg-primary-300;
+    }
+
+    &:nth-child(even) {
+      @apply text-primary-300;
+    }
+    // &--1 {
+    //   @apply text-white bg-primary-300 ;
+    // }
+
+    // &--2 {
+    //   @apply text-primary-300;
+    // }
+  }
+
+  &__cont-color {
+    @apply flex flex-wrap justify-end gap-2;
+  }
+
+  &__circle-color {
+    @apply w-8 h-8;
+  }
+}

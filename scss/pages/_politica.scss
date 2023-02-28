@@ -1,0 +1,16 @@
+.section-politica {
+  
+  &__containt {
+    @apply container flex flex-col justify-center my-20 font-cardo max-w-[1000px];
+  }
+
+  &__title {
+    @apply text-primary-100 font-cardo text-[40px] font-bold;
+    font-size: clamp(1.125rem, 1.4vw + 0.9rem, 2.5rem);
+  }
+
+  &__p {
+    @apply font-cardo mb-4;
+    font-size: clamp(0.75rem, 0.5vw + 0.7rem, 1.25rem);
+  }
+}

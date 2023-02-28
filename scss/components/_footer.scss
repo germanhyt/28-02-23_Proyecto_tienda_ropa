@@ -1,0 +1,92 @@
+.footer {
+  @apply bg-primary-300 text-white py-5 lg:py-10;
+  font-size: clamp(0.625rem, 0.4vw + 0.6rem, 1rem);
+
+  &__grid {
+    @apply flex flex-col justify-between sm:grid-flow-col sm:grid;
+  }
+
+  &__title {
+    @apply font-bold mb-2;
+    font-size: clamp(0.875rem, 0.4vw + 0.8rem, 1.25rem);
+    &--horario {
+      @apply font-semibold;
+      font-size: clamp(0.625rem, 0.6vw + 0.5rem, 1.25rem);
+    }
+  }
+
+  &__col-1 {
+    @apply flex flex-col items-center;
+  }
+
+  &__img {
+    @apply w-[113px] mb-4 lg:w-[180px] lg:h-auto bg-white;
+  }
+
+  &__col-2 {
+    @apply my-4 text-center sm:my-0;
+  }
+
+  &__col-3 {
+    @apply font-sans font-bold text-center text-white sm:text-right;
+  }
+
+  &__ul {
+    @apply flex flex-col gap-4;
+  }
+
+  &__page {
+    @apply hover:text-primary-100;
+  }
+
+  &__list {
+    @apply flex flex-col gap-2;
+
+    &-social {
+      @apply flex gap-2 lg:gap-4;
+    }
+
+    &-contact {
+      @apply flex flex-col gap-2 lg:gap-4;
+      @apply break-all;
+    }
+
+    &--horario {
+      @apply lg:gap-0;
+    }
+  }
+
+  &__item {
+    &--social {
+      @apply w-6 h-6 lg:w-8 lg:h-8;
+      @apply flex justify-center items-center border-white border-[1px] rounded-full cursor-pointer;
+      @apply transition-colors duration-300 hover:bg-white hover:text-primary-100;
+      a {
+        @apply text-sm lg:text-lg;
+      }
+    }
+
+    &--group {
+      @apply flex items-center gap-2 lg:gap-4;
+
+      i {
+        @apply text-base lg:text-3xl;
+      }
+    }
+  }
+
+  &__icon-what {
+    @apply transition-colors duration-300 hover:text-primary-100 lg:text-[33px] text-[24px];
+    @apply w-6 h-6 lg:w-9 lg:h-9;
+    @apply flex justify-center items-center  rounded-full cursor-pointer;
+    @apply transition-colors duration-300 hover:bg-white hover:text-primary-100;
+  }
+
+  &__link {
+    @apply transition-colors duration-300 hover:text-primary-100;
+  }
+
+  &__copy {
+    @apply text-center mt-8;
+  }
+}

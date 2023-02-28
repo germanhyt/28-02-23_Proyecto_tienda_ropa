@@ -1,0 +1,17 @@
+.h1,
+.h2,
+.h3 {
+  @apply font-bold font-sans text-primary-300 leading-[1];
+}
+.h1 {
+  font-size: clamp(2rem, 12vw - 1.5rem, 3.2rem);
+}
+.h2 {
+  font-size: clamp(1.25rem, 1.3vw + 1rem, 2.5rem);
+}
+.h3 {
+  @apply text-[1.3rem];
+}
+body {
+  @apply font-sans;
+}

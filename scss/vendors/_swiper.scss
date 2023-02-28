@@ -1,0 +1,39 @@
+// Swiper Global
+.swiper {
+  @apply w-full h-full;
+
+  &__cardsomos {
+    @apply  w-full  h-[350px] lg:hidden;
+    
+    & .swiper-wrapper {
+      @apply flex items-center w-full ;
+    }
+
+    & .swiper-slide {
+      @apply flex justify-center ease-linear delay-300 ;
+    }
+
+    & .swiper-pagination-bullet-active {
+      @apply bg-primary-100;
+    }
+
+    & .custom-bullet {
+      @apply h-4 w-4 bg-primary-100;
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply grid place-items-center text-primary-300 rounded-lg transition-all z-20 hover:scale-110 h-auto w-auto py-[6px] px-2 bg-white hover:bg-primary-100 hover:text-white;
+  box-shadow: -1px 1px 1px 0.5px rgba(0,0,0,.2);
+  i {
+    @apply text-xl lg:text-2xl;
+  }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+

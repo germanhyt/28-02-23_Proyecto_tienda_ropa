@@ -1,0 +1,17 @@
+.categorias {
+  &--main {
+    @apply fixed bg-white top-0 hidden w-full h-full left-0 z-50;
+  }
+
+  &--active {
+    @apply flex flex-col;
+  }
+
+  &__list {
+    @apply bg-primary-300 w-full h-full;
+  }
+
+  &__content {
+    @apply hidden;
+  }
+}
